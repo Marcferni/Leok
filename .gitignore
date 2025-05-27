@@ -1,0 +1,14 @@
+# Entorno virtual de Python
+leback/leokenv/
+# Archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Archivos de Node
+lefront/node_modules/
+
+# Archivos de log
+*.log
+
+# Otros (si fuese necesario)
+dist/
