@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'experiences',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,8 @@ ROOT_URLCONF = 'myend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # Añadimos la ruta a nuestra carpeta api/templates
+        "DIRS": [ BASE_DIR / "experiences" / "api" / "templates" ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
