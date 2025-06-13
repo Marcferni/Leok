@@ -1,6 +1,6 @@
 <template>
   <div class='bg-blue-500 text-white p-4'>
-    ¡Hola! Tailwind CSS y Vue están funcionando.
+    Â¡Hola! Tailwind CSS y Vue estÃ¡n funcionando.
   </div>
 </template>
 
@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style scoped>
-/* Puedes agregar estilos adicionales aquí */
+/* Puedes agregar estilos adicionales aquÃ­ */
 </style>
