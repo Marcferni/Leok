@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Listado de Experiencias{% endblock %}
+{% block content %}
+  <h1>Experiencias Curadas</h1>
+  <ul>
+    {% for exp in experiences %}
+      <li>
+        <h2>{{ exp.title }}</h2>
+        <p>{{ exp.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
