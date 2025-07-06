@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Expositor de Experiencias</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-4xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-6">Experiencias Curadas</h1>
+    <ul>
+      {% for exp in experiences %}
+        <li class="mb-8 p-4 bg-white rounded shadow">
+          <h2 class="text-2xl font-semibold">{{ exp.title }}</h2>
+          <p class="mt-2">{{ exp.description }}</p>
+          <p class="mt-2 text-sm text-gray-600">
+            Categoría: {{ exp.get_category_display }} /
+            Valoración: {{ exp.rating|default:"N/A" }}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
